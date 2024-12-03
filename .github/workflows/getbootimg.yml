@@ -5,7 +5,7 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://hugeota.d.miui.com/21.3.31/miui_ALIOTH_21.3.31_25fc8f0d66_11.0.zip
+  ROM_URL: https://bn.d.miui.com/OS2.0.5.0.VNKCNXM/vermeer-ota_full-OS2.0.5.0.VNKCNXM-user-15.0-dbbc6eb99e.zip
   TZ: Asia/Shanghai
 
 jobs:
@@ -60,4 +60,4 @@ jobs:
       run: |
         cd ~
         curl -sL https://git.io/file-transfer | sh
-        ./transfer wet ~/payload_dumper/output/boot.img
+        ./transfer wet ~/payload_dumper/output/init_boot.img
